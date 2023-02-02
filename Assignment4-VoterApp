@@ -102,7 +102,10 @@ vote-94849dc97-2956g      1/1     Running   0          39s
 worker-dd46d7584-58t72    1/1     Running   0          10s
 
 Observation:
-WORKER pod worker-dd46d7584-5crfd got deleted. But new pod worker-dd46d7584-58t72 got added
+a. WORKER pod worker-dd46d7584-5crfd got deleted. But new pod worker-dd46d7584-58t72 got added
+b. NO impact on the 2 results browser
+
+
 
 
 8. Tried to delete a DB pod db-b54cd94f4-q4dk8 -> 
@@ -118,7 +121,9 @@ vote-94849dc97-2956g      1/1     Running   0          3m19s
 worker-dd46d7584-58t72    1/1     Running   1          2m50s
 
 Observation:
-After deleting the DB pod db-b54cd94f4-q4dk8, new db pod got added db-b54cd94f4-g44sj and the RESTARTS value of result and worker pods are changed to 1.
+a. After deleting the DB pod db-b54cd94f4-q4dk8, new db pod got added db-b54cd94f4-g44sj and the RESTARTS value of result and worker pods are changed to 1.
+b. All the previous results are cleared
+
 
 
 
